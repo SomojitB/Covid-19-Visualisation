@@ -17,7 +17,6 @@ def show_data():
     recover = status['recovered']
     e5.insert(0, recover)
     print(status)
-    # intialise data of lists.
     data = {'id': status['id'],
             'Country': status['country'],
             'Confirmed': status['confirmed'],
@@ -29,10 +28,8 @@ def show_data():
             'Last_Updated': status['last_update']
             }
 
-    # Create DataFrame
     df = pd.DataFrame(data, index=[0])
 
-    # Print the output.
     print(df)
     cadr = {
 
